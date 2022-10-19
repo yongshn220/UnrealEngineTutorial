@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "name": "FPSProjectEditor Editor Mac Development (FPSProject)",
+            "intelliSenseMode": "clang-x64",
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compileCommands": "/Users/yongjung/Private/FPSProject/.vscode/compileCommands_FPSProject.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "Mac",
+            "intelliSenseMode": "macos-clang-arm64",
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compileCommands": "/Users/yongjung/Private/FPSProject/.vscode/compileCommands_Default.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "includePath": [
+                "${default}",
+                "/Users/Shared/Epic Games/UE_4.27/Engine/Source/Runtime/Engine/Classes",
+                "/Users/Shared/Epic Games/UE_4.27/Engine/Source/Runtime/Core/Public",
+                "/Users/Shared/Epic Games/UE_4.27/Engine/Source/Runtime/CoreUObject/Public"
+            ],
+            "compilerPath": "/usr/bin/clang"
+        }
+    ],
+    "version": 4
+}

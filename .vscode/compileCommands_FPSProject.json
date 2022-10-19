@@ -1,0 +1,27 @@
+[
+	{
+		"file": "/Users/yongjung/Private/FPSProject/Source/FPSProject/FPSProject.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/yongjung/Private/FPSProject/.vscode/compileCommands_FPSProject/FPSProject.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/yongjung/Private/FPSProject/Source/FPSProject/FPSProject.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/yongjung/Private/FPSProject/.vscode/compileCommands_FPSProject/FPSProject.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/yongjung/Private/FPSProject/Source/FPSProject/FPSProject.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/yongjung/Private/FPSProject/.vscode/compileCommands_FPSProject/FPSProject.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/yongjung/Private/FPSProject/Source/FPSProject/FPSProjectGameModeBase.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/yongjung/Private/FPSProject/.vscode/compileCommands_FPSProject/FPSProject.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/yongjung/Private/FPSProject/Source/FPSProject/FPSProjectGameModeBase.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/yongjung/Private/FPSProject/.vscode/compileCommands_FPSProject/FPSProject.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	}
+]
