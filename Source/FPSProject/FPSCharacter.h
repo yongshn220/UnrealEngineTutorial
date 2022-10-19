@@ -4,7 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Camera/CameraComponent.h"
+#include "Components/CapsuleComponent.h"
 #include "FPSCharacter.generated.h"
+
+// [ #include FPSCharacter.generated.h ] should be included at the last. (idk why)
 
 UCLASS()
 class FPSPROJECT_API AFPSCharacter : public ACharacter
@@ -39,4 +43,10 @@ public:
 
 	UFUNCTION()
 	void StopJump();
+
+	UPROPERTY(VisibleAnywhere)
+	UCameraComponent* FPSCameraComponent;
+
+	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
+	USkeletalMeshComponent* FPSMesh;
 };
