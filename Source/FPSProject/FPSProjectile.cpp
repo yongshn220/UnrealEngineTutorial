@@ -11,7 +11,7 @@ AFPSProjectile::AFPSProjectile()
 
 	if(!RootComponent)
 	{
-		RootComponent = CreateDefaultSubobject<USceneComponet>(TEXT("ProjectileSceneComponent"));
+		RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("ProjectileSceneComponent"));
 	}
 
 	if(!CollisionComponent)
@@ -38,13 +38,30 @@ AFPSProjectile::AFPSProjectile()
 		ProjectileMovementComponent->ProjectileGravityScale = 0.0f;
 	}
 
+	if(!ProjectileMeshComponent)
+	{
+		ProjectileMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMeshComponent"));
+		static ConstructorHelpers::FObjectFinder<UStaticMesh>Mesh(TEXT("'/Game/Sphere.Sphere'"));
+		if(Mesh.Succeeded())
+		{
+			ProjectileMeshComponent->SetStaticMesh(Mesh.Object);
+		}
+	}
+
+	static ConstructorHelpers::FObjectFinder<UMaterial>Material(TEXT("'/Game/SphereMaterial.SphereMaterial'"));
+	if(Material.Succeeded())
+	{
+		ProjectileMaterialInstance = UMaterialInstanceDynamic::Create(Material.Object, ProjectileMeshComponent);
+	}
+	ProjectileMeshComponent->SetMaterial(0, ProjectileMaterialInstance);
+	ProjectileMeshComponent->SetRelativeScale3D(FVector(0.09f, 0.09f, 0.09f));
+	ProjectileMeshComponent->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned
 void AFPSProjectile::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
